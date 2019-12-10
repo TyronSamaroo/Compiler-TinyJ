@@ -1,0 +1,274 @@
+<program>
+ Reserved Word: class
+ IDENTIFIER: CS316MyExample  [not in symbol table]
+ {
+ <dataFieldDecl>
+  Reserved Word: static
+  <varDecl>
+   Reserved Word: int
+   <singleVarDecl>
+    IDENTIFIER: five  [not in symbol table]
+    [
+    ]
+    =
+    *** Generating:  0:      PUSHSTATADDR      0
+    <expr3>
+     <expr2>
+      <expr1>
+       Reserved Word: new
+       Reserved Word: int
+       [
+       <expr3>
+        <expr2>
+         <expr1>
+          *** Generating:  1:      PUSHNUM           555
+          UNSIGNED INTEGER LITERAL: 555
+          ... node has no more children
+         ... node has no more children
+        ... node has no more children
+       ]
+       *** Generating:  2:      HEAPALLOC
+       ... node has no more children
+      ... node has no more children
+     ... node has no more children
+    *** Generating:  3:      SAVETOADDR
+    ... node has no more children
+   ;
+   ... node has no more children
+  ... node has no more children
+ <mainDecl>
+  Reserved Word: public
+  Reserved Word: static
+  Reserved Word: void
+  Reserved Word: main
+  (
+  Reserved Word: String
+  IDENTIFIER: args  [not in symbol table]
+  [
+  ]
+  )
+  *** Generating:  4:      INITSTKFRM        ?
+  <compoundStmt>
+   {
+   <statement>
+    <ifStmt>
+     Reserved Word: if
+     (
+     <expr7>
+      <expr6>
+       <expr5>
+        <expr4>
+         <expr3>
+          <expr2>
+           <expr1>
+            IDENTIFIER: five  [static var (address = 0)]
+            *** Generating:  5:      PUSHSTATADDR      0
+            *** Generating:  6:      LOADFROMADDR
+            [
+            <expr3>
+             <expr2>
+              <expr1>
+               *** Generating:  7:      PUSHNUM           5
+               UNSIGNED INTEGER LITERAL: 5
+               ... node has no more children
+              ... node has no more children
+             ... node has no more children
+            *** Generating:  8:      ADDTOPTR
+            *** Generating:  9:      LOADFROMADDR
+            ]
+            ... node has no more children
+           ... node has no more children
+          ... node has no more children
+         <
+         <expr3>
+          <expr2>
+           <expr1>
+            *** Generating:  10:     PUSHNUM           55
+            UNSIGNED INTEGER LITERAL: 55
+            ... node has no more children
+           ... node has no more children
+          ... node has no more children
+         *** Generating:  11:     LT
+         ... node has no more children
+        ... node has no more children
+       ... node has no more children
+      ... node has no more children
+     )
+     *** Generating:  12:     JUMPONFALSE       ?
+     <statement>
+      <outputStmt>
+       Reserved Word: System
+       .
+       Reserved Word: out
+       .
+       Reserved Word: println
+       (
+       <printArgument>
+        <expr3>
+         <expr2>
+          <expr1>
+           IDENTIFIER: f  [not in symbol table]
+           <argumentList>
+            (
+            <expr3>
+             <expr2>
+              <expr1>
+               *** Generating:  13:     PUSHNUM           55555
+               UNSIGNED INTEGER LITERAL: 55555
+               ... node has no more children
+              ... node has no more children
+             ... node has no more children
+            *** Generating:  14:     PASSPARAM
+            )
+            ... node has no more children
+           *** Generating:  15:     CALLSTATMETHOD    ?
+           ... node has no more children
+          ... node has no more children
+         ... node has no more children
+        *** Generating:  16:     WRITEINT
+        ... node has no more children
+       )
+       ;
+       *** Generating:  17:     WRITELNOP
+       ... node has no more children
+      ... node has no more children
+     Reserved Word: else
+     *** Generating:  18:     JUMP              ?
+     *** Fixed Up:  12:     JUMPONFALSE       19
+     <statement>
+      <outputStmt>
+       Reserved Word: System
+       .
+       Reserved Word: out
+       .
+       Reserved Word: println
+       (
+       <printArgument>
+        *** Generating:  19:     WRITESTRING       1     5
+        CHARACTER STRING LITERAL: "Wrong"
+        ... node has no more children
+       )
+       ;
+       *** Generating:  20:     WRITELNOP
+       ... node has no more children
+      ... node has no more children
+     *** Fixed Up:  18:     JUMP              21
+     ... node has no more children
+    ... node has no more children
+   }
+   ... node has no more children
+  *** Fixed Up:  4:      INITSTKFRM        0
+  *** Generating:  21:     STOP
+  ... node has no more children
+ <methodDecl>
+  Reserved Word: static
+  Reserved Word: int
+  *** Fixed Up:  15:     CALLSTATMETHOD    22
+  *** Generating:  22:     INITSTKFRM        ?
+  IDENTIFIER: f  [method (start address = 22)]
+  (
+  <parameterDeclList>
+   <parameterDecl>
+    Reserved Word: int
+    IDENTIFIER: n  [not in symbol table]
+    ... node has no more children
+   ... node has no more children
+  )
+  <compoundStmt>
+   {
+   <statement>
+    <varDecl>
+     Reserved Word: int
+     <singleVarDecl>
+      IDENTIFIER: jj  [not in symbol table]
+      =
+      *** Generating:  23:     PUSHLOCADDR       1
+      <expr3>
+       <expr2>
+        <expr1>
+         IDENTIFIER: n  [local var (stackframe offset = -2)]
+         *** Generating:  24:     PUSHLOCADDR       -2
+         *** Generating:  25:     LOADFROMADDR
+         ... node has no more children
+        ... node has no more children
+       ... node has no more children
+      *** Generating:  26:     SAVETOADDR
+      ... node has no more children
+     ;
+     ... node has no more children
+    ... node has no more children
+   <statement>
+    Reserved Word: return
+    <expr3>
+     <expr2>
+      <expr1>
+       IDENTIFIER: jj  [local var (stackframe offset = 1)]
+       *** Generating:  27:     PUSHLOCADDR       1
+       *** Generating:  28:     LOADFROMADDR
+       ... node has no more children
+      ... node has no more children
+     ... node has no more children
+    *** Generating:  29:     RETURN            1
+    ;
+    ... node has no more children
+   }
+   ... node has no more children
+  *** Fixed Up:  22:     INITSTKFRM        1
+  ... node has no more children
+ }
+ ... node has no more children
+
+
+
+Instructions Generated:
+
+0:      PUSHSTATADDR      0
+1:      PUSHNUM           555
+2:      HEAPALLOC
+3:      SAVETOADDR
+4:      INITSTKFRM        0
+5:      PUSHSTATADDR      0
+6:      LOADFROMADDR
+7:      PUSHNUM           5
+8:      ADDTOPTR
+9:      LOADFROMADDR
+10:     PUSHNUM           55
+11:     LT
+12:     JUMPONFALSE       19
+13:     PUSHNUM           55555
+14:     PASSPARAM
+15:     CALLSTATMETHOD    22
+16:     WRITEINT
+17:     WRITELNOP
+18:     JUMP              21
+19:     WRITESTRING       1     5
+20:     WRITELNOP
+21:     STOP
+22:     INITSTKFRM        1
+23:     PUSHLOCADDR       1
+24:     PUSHLOCADDR       -2
+25:     LOADFROMADDR
+26:     SAVETOADDR
+27:     PUSHLOCADDR       1
+28:     LOADFROMADDR
+29:     RETURN            1
+
+
+
+Data memory dump
+
+  Data memory--addresses 0 to top of stack, and allocated heap locations:
+  0: 0 = Ctrl-@
+  1: 87 = 'W'
+  2: 114 = 'r'
+  3: 111 = 'o'
+  4: 110 = 'n'
+  5: 103 = 'g'
+
+  PC=0  ESP=0  FP=<not in use>  ASP= POINTER TO 6
+  HP= POINTER TO 10000  HMAX= POINTER TO 15000
+
+  No instructions executed.
+
+  Expression evaluation stack: <empty>
+
