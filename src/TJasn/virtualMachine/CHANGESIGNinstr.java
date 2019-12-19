@@ -8,6 +8,7 @@ public class CHANGESIGNinstr extends ZeroOperandInstruction {
   void execute () throws VirtualMachineHaltException
   {
       /* ???????? */
+    EXPRSTACK[ESP-1] *= -1;
   }
 
   public CHANGESIGNinstr ()

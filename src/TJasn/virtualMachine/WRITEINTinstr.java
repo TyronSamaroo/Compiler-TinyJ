@@ -7,6 +7,7 @@ public class WRITEINTinstr extends ZeroOperandInstruction {
   void execute ()
   {
     /* ???????? */
+    System.out.print(EXPRSTACK[--ESP]);
   }
 
   public WRITEINTinstr ()

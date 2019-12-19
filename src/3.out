@@ -45,8 +45,8 @@
      Reserved Word: println
      (
      <printArgument>
-      *** Generating:  1:      WRITESTRING       2     8
       CHARACTER STRING LITERAL: "Testing"
+      *** Generating:  1:      WRITESTRING       2     8
       ... node has no more children
      )
      ;
@@ -84,15 +84,15 @@
         ... node has no more children
        ... node has no more children
       ... node has no more children
-     *** Generating:  7:      JUMPONFALSE       ?
      )
+     *** Generating:  7:      JUMPONFALSE       ?
      <statement>
       <compoundStmt>
        {
        <statement>
         <assignmentOrInvoc>
          IDENTIFIER: y  [static var (address = 1)]
-         *** Generating:  8:      PUSHLOCADDR       1
+         *** Generating:  8:      PUSHSTATADDR      1
          =
          <expr3>
           <expr2>
@@ -137,8 +137,8 @@
             ... node has no more children
            ... node has no more children
           ... node has no more children
-         *** Generating:  15:     JUMPONFALSE       ?
          )
+         *** Generating:  15:     JUMPONFALSE       ?
          <statement>
           <compoundStmt>
            {
@@ -175,8 +175,8 @@
              Reserved Word: print
              (
              <printArgument>
-              *** Generating:  19:     WRITESTRING       9     12
               CHARACTER STRING LITERAL: "    "
+              *** Generating:  19:     WRITESTRING       9     12
               ... node has no more children
              )
              ;
@@ -306,8 +306,8 @@
                Reserved Word: println
                (
                <printArgument>
-                *** Generating:  34:     WRITESTRING       13    19
                 CHARACTER STRING LITERAL: "<1 & <1"
+                *** Generating:  34:     WRITESTRING       13    19
                 ... node has no more children
                )
                ;
@@ -416,8 +416,8 @@
                Reserved Word: println
                (
                <printArgument>
-                *** Generating:  46:     WRITESTRING       20    26
                 CHARACTER STRING LITERAL: "<1 & >1"
+                *** Generating:  46:     WRITESTRING       20    26
                 ... node has no more children
                )
                ;
@@ -526,8 +526,8 @@
                Reserved Word: println
                (
                <printArgument>
-                *** Generating:  58:     WRITESTRING       27    33
                 CHARACTER STRING LITERAL: ">1 & >1"
+                *** Generating:  58:     WRITESTRING       27    33
                 ... node has no more children
                )
                ;
@@ -636,8 +636,8 @@
                Reserved Word: println
                (
                <printArgument>
-                *** Generating:  70:     WRITESTRING       34    40
                 CHARACTER STRING LITERAL: ">1 & <1"
+                *** Generating:  70:     WRITESTRING       34    40
                 ... node has no more children
                )
                ;
@@ -748,8 +748,8 @@
                Reserved Word: println
                (
                <printArgument>
-                *** Generating:  82:     WRITESTRING       41    47
                 CHARACTER STRING LITERAL: "<1 | <1"
+                *** Generating:  82:     WRITESTRING       41    47
                 ... node has no more children
                )
                ;
@@ -860,8 +860,8 @@
                Reserved Word: println
                (
                <printArgument>
-                *** Generating:  94:     WRITESTRING       48    54
                 CHARACTER STRING LITERAL: "<1 | >1"
+                *** Generating:  94:     WRITESTRING       48    54
                 ... node has no more children
                )
                ;
@@ -972,8 +972,8 @@
                Reserved Word: println
                (
                <printArgument>
-                *** Generating:  106:    WRITESTRING       55    61
                 CHARACTER STRING LITERAL: ">1 | >1"
+                *** Generating:  106:    WRITESTRING       55    61
                 ... node has no more children
                )
                ;
@@ -1084,8 +1084,8 @@
                Reserved Word: println
                (
                <printArgument>
-                *** Generating:  118:    WRITESTRING       62    68
                 CHARACTER STRING LITERAL: ">1 | <1"
+                *** Generating:  118:    WRITESTRING       62    68
                 ... node has no more children
                )
                ;
@@ -1098,7 +1098,7 @@
            <statement>
             <assignmentOrInvoc>
              IDENTIFIER: y  [static var (address = 1)]
-             *** Generating:  120:    PUSHLOCADDR       1
+             *** Generating:  120:    PUSHSTATADDR      1
              =
              <expr3>
               <expr2>
@@ -1144,7 +1144,7 @@
        <statement>
         <assignmentOrInvoc>
          IDENTIFIER: x  [static var (address = 0)]
-         *** Generating:  128:    PUSHLOCADDR       0
+         *** Generating:  128:    PUSHSTATADDR      0
          =
          <expr3>
           <expr2>
@@ -1177,7 +1177,7 @@
    <statement>
     <assignmentOrInvoc>
      IDENTIFIER: x  [static var (address = 0)]
-     *** Generating:  135:    PUSHLOCADDR       0
+     *** Generating:  135:    PUSHSTATADDR      0
      =
      <expr3>
       <expr2>
@@ -1255,8 +1255,8 @@
        Reserved Word: print
        (
        <printArgument>
-        *** Generating:  144:    WRITESTRING       69    79
         CHARACTER STRING LITERAL: "Error 0 ..."
+        *** Generating:  144:    WRITESTRING       69    79
         ... node has no more children
        )
        ;
@@ -1274,8 +1274,8 @@
        Reserved Word: print
        (
        <printArgument>
-        *** Generating:  146:    WRITESTRING       80    96
         CHARACTER STRING LITERAL: "All's well 0 ... "
+        *** Generating:  146:    WRITESTRING       80    96
         ... node has no more children
        )
        ;
@@ -1346,8 +1346,8 @@
        Reserved Word: print
        (
        <printArgument>
-        *** Generating:  153:    WRITESTRING       97    108
         CHARACTER STRING LITERAL: "Error 1 ... "
+        *** Generating:  153:    WRITESTRING       97    108
         ... node has no more children
        )
        ;
@@ -1365,8 +1365,8 @@
        Reserved Word: print
        (
        <printArgument>
-        *** Generating:  155:    WRITESTRING       109   125
         CHARACTER STRING LITERAL: "All's well 1 ... "
+        *** Generating:  155:    WRITESTRING       109   125
         ... node has no more children
        )
        ;
@@ -1437,8 +1437,8 @@
        Reserved Word: print
        (
        <printArgument>
-        *** Generating:  162:    WRITESTRING       126   137
         CHARACTER STRING LITERAL: "Error 2 ... "
+        *** Generating:  162:    WRITESTRING       126   137
         ... node has no more children
        )
        ;
@@ -1456,8 +1456,8 @@
        Reserved Word: print
        (
        <printArgument>
-        *** Generating:  164:    WRITESTRING       138   154
         CHARACTER STRING LITERAL: "All's well 2 ... "
+        *** Generating:  164:    WRITESTRING       138   154
         ... node has no more children
        )
        ;
@@ -1530,8 +1530,8 @@
        Reserved Word: println
        (
        <printArgument>
-        *** Generating:  171:    WRITESTRING       155   166
         CHARACTER STRING LITERAL: "All's well 3"
+        *** Generating:  171:    WRITESTRING       155   166
         ... node has no more children
        )
        ;
@@ -1550,8 +1550,8 @@
        Reserved Word: println
        (
        <printArgument>
-        *** Generating:  174:    WRITESTRING       167   173
         CHARACTER STRING LITERAL: "Error 3"
+        *** Generating:  174:    WRITESTRING       167   173
         ... node has no more children
        )
        ;
@@ -1581,7 +1581,7 @@ Instructions Generated:
 5:      PUSHNUM           2
 6:      LE
 7:      JUMPONFALSE       135
-8:      PUSHLOCADDR       1
+8:      PUSHSTATADDR      1
 9:      PUSHNUM           0
 10:     SAVETOADDR
 11:     PUSHSTATADDR      1
@@ -1693,7 +1693,7 @@ Instructions Generated:
 117:    JUMPONFALSE       120
 118:    WRITESTRING       62    68
 119:    WRITELNOP
-120:    PUSHLOCADDR       1
+120:    PUSHSTATADDR      1
 121:    PUSHSTATADDR      1
 122:    LOADFROMADDR
 123:    PUSHNUM           2
@@ -1701,14 +1701,14 @@ Instructions Generated:
 125:    SAVETOADDR
 126:    WRITELNOP
 127:    JUMP              11
-128:    PUSHLOCADDR       0
+128:    PUSHSTATADDR      0
 129:    PUSHSTATADDR      0
 130:    LOADFROMADDR
 131:    PUSHNUM           2
 132:    ADD
 133:    SAVETOADDR
 134:    JUMP              3
-135:    PUSHLOCADDR       0
+135:    PUSHSTATADDR      0
 136:    PUSHNUM           0
 137:    SAVETOADDR
 138:    PUSHSTATADDR      0
@@ -1750,191 +1750,3 @@ Instructions Generated:
 174:    WRITESTRING       167   173
 175:    WRITELNOP
 176:    STOP
-
-
-
-Data memory dump
-
-  Data memory--addresses 0 to top of stack, and allocated heap locations:
-  0: 0 = Ctrl-@
-  1: 0 = Ctrl-@
-  2: 84 = 'T'
-  3: 101 = 'e'
-  4: 115 = 's'
-  5: 116 = 't'
-  6: 105 = 'i'
-  7: 110 = 'n'
-  8: 103 = 'g'
-  9: 32 = ' '
-  10: 32 = ' '
-  11: 32 = ' '
-  12: 32 = ' '
-  13: 60 = '<'
-  14: 49 = '1'
-  15: 32 = ' '
-  16: 38 = '&'
-  17: 32 = ' '
-  18: 60 = '<'
-  19: 49 = '1'
-  20: 60 = '<'
-  21: 49 = '1'
-  22: 32 = ' '
-  23: 38 = '&'
-  24: 32 = ' '
-  25: 62 = '>'
-  26: 49 = '1'
-  27: 62 = '>'
-  28: 49 = '1'
-  29: 32 = ' '
-  30: 38 = '&'
-  31: 32 = ' '
-  32: 62 = '>'
-  33: 49 = '1'
-  34: 62 = '>'
-  35: 49 = '1'
-  36: 32 = ' '
-  37: 38 = '&'
-  38: 32 = ' '
-  39: 60 = '<'
-  40: 49 = '1'
-  41: 60 = '<'
-  42: 49 = '1'
-  43: 32 = ' '
-  44: 124 = '|'
-  45: 32 = ' '
-  46: 60 = '<'
-  47: 49 = '1'
-  48: 60 = '<'
-  49: 49 = '1'
-  50: 32 = ' '
-  51: 124 = '|'
-  52: 32 = ' '
-  53: 62 = '>'
-  54: 49 = '1'
-  55: 62 = '>'
-  56: 49 = '1'
-  57: 32 = ' '
-  58: 124 = '|'
-  59: 32 = ' '
-  60: 62 = '>'
-  61: 49 = '1'
-  62: 62 = '>'
-  63: 49 = '1'
-  64: 32 = ' '
-  65: 124 = '|'
-  66: 32 = ' '
-  67: 60 = '<'
-  68: 49 = '1'
-  69: 69 = 'E'
-  70: 114 = 'r'
-  71: 114 = 'r'
-  72: 111 = 'o'
-  73: 114 = 'r'
-  74: 32 = ' '
-  75: 48 = '0'
-  76: 32 = ' '
-  77: 46 = '.'
-  78: 46 = '.'
-  79: 46 = '.'
-  80: 65 = 'A'
-  81: 108 = 'l'
-  82: 108 = 'l'
-  83: 39 = '''
-  84: 115 = 's'
-  85: 32 = ' '
-  86: 119 = 'w'
-  87: 101 = 'e'
-  88: 108 = 'l'
-  89: 108 = 'l'
-  90: 32 = ' '
-  91: 48 = '0'
-  92: 32 = ' '
-  93: 46 = '.'
-  94: 46 = '.'
-  95: 46 = '.'
-  96: 32 = ' '
-  97: 69 = 'E'
-  98: 114 = 'r'
-  99: 114 = 'r'
-  100: 111 = 'o'
-  101: 114 = 'r'
-  102: 32 = ' '
-  103: 49 = '1'
-  104: 32 = ' '
-  105: 46 = '.'
-  106: 46 = '.'
-  107: 46 = '.'
-  108: 32 = ' '
-  109: 65 = 'A'
-  110: 108 = 'l'
-  111: 108 = 'l'
-  112: 39 = '''
-  113: 115 = 's'
-  114: 32 = ' '
-  115: 119 = 'w'
-  116: 101 = 'e'
-  117: 108 = 'l'
-  118: 108 = 'l'
-  119: 32 = ' '
-  120: 49 = '1'
-  121: 32 = ' '
-  122: 46 = '.'
-  123: 46 = '.'
-  124: 46 = '.'
-  125: 32 = ' '
-  126: 69 = 'E'
-  127: 114 = 'r'
-  128: 114 = 'r'
-  129: 111 = 'o'
-  130: 114 = 'r'
-  131: 32 = ' '
-  132: 50 = '2'
-  133: 32 = ' '
-  134: 46 = '.'
-  135: 46 = '.'
-  136: 46 = '.'
-  137: 32 = ' '
-  138: 65 = 'A'
-  139: 108 = 'l'
-  140: 108 = 'l'
-  141: 39 = '''
-  142: 115 = 's'
-  143: 32 = ' '
-  144: 119 = 'w'
-  145: 101 = 'e'
-  146: 108 = 'l'
-  147: 108 = 'l'
-  148: 32 = ' '
-  149: 50 = '2'
-  150: 32 = ' '
-  151: 46 = '.'
-  152: 46 = '.'
-  153: 46 = '.'
-  154: 32 = ' '
-  155: 65 = 'A'
-  156: 108 = 'l'
-  157: 108 = 'l'
-  158: 39 = '''
-  159: 115 = 's'
-  160: 32 = ' '
-  161: 119 = 'w'
-  162: 101 = 'e'
-  163: 108 = 'l'
-  164: 108 = 'l'
-  165: 32 = ' '
-  166: 51 = '3'
-  167: 69 = 'E'
-  168: 114 = 'r'
-  169: 114 = 'r'
-  170: 111 = 'o'
-  171: 114 = 'r'
-  172: 32 = ' '
-  173: 51 = '3'
-
-  PC=0  ESP=0  FP=<not in use>  ASP= POINTER TO 174
-  HP= POINTER TO 10000  HMAX= POINTER TO 15000
-
-  No instructions executed.
-
-  Expression evaluation stack: <empty>
-

@@ -9,6 +9,10 @@ public class ADDinstr extends ZeroOperandInstruction {
   void execute () throws VirtualMachineHaltException
   {
       /* ???????? */
+    //ESP - 1 is the top most
+    EXPRSTACK[--ESP-1] += EXPRSTACK[ESP];
+
+
   }
 
   public ADDinstr ()

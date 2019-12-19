@@ -59,7 +59,7 @@
    <statement>
     <assignmentOrInvoc>
      IDENTIFIER: arg  [static var (address = 0)]
-     *** Generating:  1:      PUSHLOCADDR       0
+     *** Generating:  1:      PUSHSTATADDR      0
      =
      <expr3>
       <expr2>
@@ -88,7 +88,7 @@
    <statement>
     <assignmentOrInvoc>
      IDENTIFIER: number  [static var (address = 3)]
-     *** Generating:  6:      PUSHLOCADDR       3
+     *** Generating:  6:      PUSHSTATADDR      3
      =
      <expr3>
       <expr2>
@@ -117,7 +117,7 @@
    <statement>
     <assignmentOrInvoc>
      IDENTIFIER: arg1  [static var (address = 1)]
-     *** Generating:  13:     PUSHLOCADDR       1
+     *** Generating:  13:     PUSHSTATADDR      1
      =
      <expr3>
       <expr2>
@@ -235,7 +235,7 @@
    <statement>
     <assignmentOrInvoc>
      IDENTIFIER: arg2  [static var (address = 2)]
-     *** Generating:  31:     PUSHLOCADDR       2
+     *** Generating:  31:     PUSHSTATADDR      2
      =
      <expr3>
       <expr2>
@@ -400,7 +400,7 @@
        <statement>
         <assignmentOrInvoc>
          IDENTIFIER: sqrt  [static var (address = 4)]
-         *** Generating:  59:     PUSHLOCADDR       4
+         *** Generating:  59:     PUSHSTATADDR      4
          =
          <expr3>
           <expr2>
@@ -510,7 +510,7 @@
        <statement>
         <assignmentOrInvoc>
          IDENTIFIER: arg1  [static var (address = 1)]
-         *** Generating:  76:     PUSHLOCADDR       1
+         *** Generating:  76:     PUSHSTATADDR      1
          =
          <expr3>
           <expr2>
@@ -618,7 +618,7 @@
    <statement>
     <assignmentOrInvoc>
      IDENTIFIER: number  [static var (address = 3)]
-     *** Generating:  92:     PUSHLOCADDR       3
+     *** Generating:  92:     PUSHSTATADDR      3
      =
      <expr3>
       <expr2>
@@ -649,7 +649,7 @@
    <statement>
     <assignmentOrInvoc>
      IDENTIFIER: arg1  [static var (address = 1)]
-     *** Generating:  101:    PUSHLOCADDR       1
+     *** Generating:  101:    PUSHSTATADDR      1
      =
      <expr3>
       <expr2>
@@ -831,7 +831,7 @@
          <statement>
           <assignmentOrInvoc>
            IDENTIFIER: minArg  [static var (address = 5)]
-           *** Generating:  129:    PUSHLOCADDR       5
+           *** Generating:  129:    PUSHSTATADDR      5
            =
            <expr3>
             <expr2>
@@ -894,7 +894,7 @@
        <statement>
         <assignmentOrInvoc>
          IDENTIFIER: arg  [static var (address = 0)]
-         *** Generating:  138:    PUSHLOCADDR       0
+         *** Generating:  138:    PUSHSTATADDR      0
          =
          <expr3>
           <expr2>
@@ -949,7 +949,7 @@
        <statement>
         <assignmentOrInvoc>
          IDENTIFIER: arg  [static var (address = 0)]
-         *** Generating:  149:    PUSHLOCADDR       0
+         *** Generating:  149:    PUSHSTATADDR      0
          =
          <expr3>
           <expr2>
@@ -986,7 +986,7 @@
        <statement>
         <assignmentOrInvoc>
          IDENTIFIER: result  [static var (address = 6)]
-         *** Generating:  156:    PUSHLOCADDR       6
+         *** Generating:  156:    PUSHSTATADDR      6
          =
          <expr3>
           <expr2>
@@ -1019,7 +1019,7 @@
        <statement>
         <assignmentOrInvoc>
          IDENTIFIER: arg  [static var (address = 0)]
-         *** Generating:  165:    PUSHLOCADDR       0
+         *** Generating:  165:    PUSHSTATADDR      0
          =
          <expr3>
           <expr2>
@@ -1086,7 +1086,7 @@
        <statement>
         <assignmentOrInvoc>
          IDENTIFIER: result  [static var (address = 6)]
-         *** Generating:  177:    PUSHLOCADDR       6
+         *** Generating:  177:    PUSHSTATADDR      6
          =
          <expr3>
           <expr2>
@@ -1106,7 +1106,7 @@
        <statement>
         <assignmentOrInvoc>
          IDENTIFIER: result  [static var (address = 6)]
-         *** Generating:  181:    PUSHLOCADDR       6
+         *** Generating:  181:    PUSHSTATADDR      6
          =
          <expr3>
           <expr2>
@@ -1197,7 +1197,7 @@
    <statement>
     <assignmentOrInvoc>
      IDENTIFIER: minArg  [static var (address = 5)]
-     *** Generating:  192:    PUSHLOCADDR       5
+     *** Generating:  192:    PUSHSTATADDR      5
      =
      <expr3>
       <expr2>
@@ -1244,19 +1244,19 @@
 Instructions Generated:
 
 0:      INITSTKFRM        0
-1:      PUSHLOCADDR       0
+1:      PUSHSTATADDR      0
 2:      PUSHNUM           4
 3:      SAVETOADDR
 4:      CALLSTATMETHOD    191
 5:      NOP
-6:      PUSHLOCADDR       3
+6:      PUSHSTATADDR      3
 7:      PUSHNUM           3
 8:      PUSHNUM           100
 9:      MUL
 10:     PUSHNUM           100
 11:     MUL
 12:     SAVETOADDR
-13:     PUSHLOCADDR       1
+13:     PUSHSTATADDR      1
 14:     PUSHNUM           1
 15:     SAVETOADDR
 16:     PUSHSTATADDR      3
@@ -1274,7 +1274,7 @@ Instructions Generated:
 28:     PUSHLOCADDR       1
 29:     PUSHNUM           0
 30:     SAVETOADDR
-31:     PUSHLOCADDR       2
+31:     PUSHSTATADDR      2
 32:     PUSHSTATADDR      3
 33:     LOADFROMADDR
 34:     PUSHSTATADDR      1
@@ -1302,7 +1302,7 @@ Instructions Generated:
 56:     LT
 57:     AND
 58:     JUMPONFALSE       71
-59:     PUSHLOCADDR       4
+59:     PUSHSTATADDR      4
 60:     PUSHSTATADDR      1
 61:     LOADFROMADDR
 62:     PUSHSTATADDR      2
@@ -1319,7 +1319,7 @@ Instructions Generated:
 73:     PUSHNUM           0
 74:     EQ
 75:     JUMPONFALSE       86
-76:     PUSHLOCADDR       1
+76:     PUSHSTATADDR      1
 77:     PUSHSTATADDR      1
 78:     LOADFROMADDR
 79:     PUSHSTATADDR      2
@@ -1335,7 +1335,7 @@ Instructions Generated:
 89:     LOADFROMADDR
 90:     WRITEINT
 91:     WRITELNOP
-92:     PUSHLOCADDR       3
+92:     PUSHSTATADDR      3
 93:     PUSHNUM           2
 94:     PUSHSTATADDR      6
 95:     LOADFROMADDR
@@ -1344,7 +1344,7 @@ Instructions Generated:
 98:     LOADFROMADDR
 99:     MUL
 100:    SAVETOADDR
-101:    PUSHLOCADDR       1
+101:    PUSHSTATADDR      1
 102:    PUSHSTATADDR      6
 103:    LOADFROMADDR
 104:    SAVETOADDR
@@ -1372,7 +1372,7 @@ Instructions Generated:
 126:    PUSHLOCADDR       2
 127:    PUSHNUM           1
 128:    SAVETOADDR
-129:    PUSHLOCADDR       5
+129:    PUSHSTATADDR      5
 130:    PUSHSTATADDR      0
 131:    LOADFROMADDR
 132:    SAVETOADDR
@@ -1381,7 +1381,7 @@ Instructions Generated:
 135:    LOADFROMADDR
 136:    LT
 137:    JUMPONFALSE       172
-138:    PUSHLOCADDR       0
+138:    PUSHSTATADDR      0
 139:    PUSHSTATADDR      0
 140:    LOADFROMADDR
 141:    PUSHNUM           1
@@ -1392,14 +1392,14 @@ Instructions Generated:
 146:    PUSHSTATADDR      6
 147:    LOADFROMADDR
 148:    SAVETOADDR
-149:    PUSHLOCADDR       0
+149:    PUSHSTATADDR      0
 150:    PUSHSTATADDR      0
 151:    LOADFROMADDR
 152:    PUSHNUM           1
 153:    SUB
 154:    SAVETOADDR
 155:    CALLSTATMETHOD    111
-156:    PUSHLOCADDR       6
+156:    PUSHSTATADDR      6
 157:    PUSHNUM           6
 158:    PUSHLOCADDR       1
 159:    LOADFROMADDR
@@ -1408,7 +1408,7 @@ Instructions Generated:
 162:    LOADFROMADDR
 163:    SUB
 164:    SAVETOADDR
-165:    PUSHLOCADDR       0
+165:    PUSHSTATADDR      0
 166:    PUSHSTATADDR      0
 167:    LOADFROMADDR
 168:    PUSHNUM           2
@@ -1420,11 +1420,11 @@ Instructions Generated:
 174:    PUSHNUM           1
 175:    EQ
 176:    JUMPONFALSE       181
-177:    PUSHLOCADDR       6
+177:    PUSHSTATADDR      6
 178:    PUSHNUM           6
 179:    SAVETOADDR
 180:    JUMP              184
-181:    PUSHLOCADDR       6
+181:    PUSHSTATADDR      6
 182:    PUSHNUM           1
 183:    SAVETOADDR
 184:    PUSHLOCADDR       2
@@ -1435,7 +1435,7 @@ Instructions Generated:
 189:    CALLSTATMETHOD    87
 190:    RETURN            0
 191:    INITSTKFRM        0
-192:    PUSHLOCADDR       5
+192:    PUSHSTATADDR      5
 193:    PUSHSTATADDR      0
 194:    LOADFROMADDR
 195:    PUSHNUM           1
@@ -1443,24 +1443,3 @@ Instructions Generated:
 197:    SAVETOADDR
 198:    CALLSTATMETHOD    111
 199:    RETURN            0
-
-
-
-Data memory dump
-
-  Data memory--addresses 0 to top of stack, and allocated heap locations:
-  0: 0 = Ctrl-@
-  1: 0 = Ctrl-@
-  2: 0 = Ctrl-@
-  3: 0 = Ctrl-@
-  4: 0 = Ctrl-@
-  5: 0 = Ctrl-@
-  6: 0 = Ctrl-@
-
-  PC=0  ESP=0  FP=<not in use>  ASP= POINTER TO 7
-  HP= POINTER TO 10000  HMAX= POINTER TO 15000
-
-  No instructions executed.
-
-  Expression evaluation stack: <empty>
-

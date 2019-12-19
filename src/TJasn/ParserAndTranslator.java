@@ -498,7 +498,7 @@ public final class ParserAndTranslator {
       }
       else {
           /* ???????? */
-        new PUSHLOCADDRinstr(t.offset);
+        new PUSHSTATADDRinstr(t.offset);
       }
 
       int dim = 0;
@@ -673,8 +673,9 @@ public final class ParserAndTranslator {
 
     /* ???????? */
     if(getCurrentToken() == CHARSTRING){
-      new WRITESTRINGinstr(LexicalAnalyzer.getStartOfString(),LexicalAnalyzer.getEndOfString());
       nextToken();
+      new WRITESTRINGinstr(LexicalAnalyzer.getStartOfString(),LexicalAnalyzer.getEndOfString());
+
     }
     else{
       expr3();
@@ -859,8 +860,9 @@ public final class ParserAndTranslator {
         accept(INT);
         accept(LBRACKET);
         expr3();
-        accept(RBRACKET);
         new HEAPALLOCinstr();
+        accept(RBRACKET);
+
         while(getCurrentToken() == LBRACKET){
           nextToken();
           accept(RBRACKET);

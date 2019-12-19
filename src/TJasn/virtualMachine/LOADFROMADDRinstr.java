@@ -9,6 +9,8 @@ public class LOADFROMADDRinstr extends ZeroOperandInstruction {
   void execute () throws VirtualMachineHaltException
   {
        /* ???????? */
+    int p = EXPRSTACK[ESP - 1];
+    EXPRSTACK[ESP -1] = TJ.data[p-POINTERTAG];
   }
 
   public LOADFROMADDRinstr ()

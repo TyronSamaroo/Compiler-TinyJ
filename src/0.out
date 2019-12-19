@@ -184,8 +184,8 @@
      Reserved Word: print
      (
      <printArgument>
-      *** Generating:  33:     WRITESTRING       3     12
       CHARACTER STRING LITERAL: "292 / 8 = "
+      *** Generating:  33:     WRITESTRING       3     12
       ... node has no more children
      )
      ;
@@ -296,8 +296,8 @@
      Reserved Word: print
      (
      <printArgument>
-      *** Generating:  53:     WRITESTRING       13    22
       CHARACTER STRING LITERAL: "289 % 9 = "
+      *** Generating:  53:     WRITESTRING       13    22
       ... node has no more children
      )
      ;
@@ -388,8 +388,8 @@
      Reserved Word: print
      (
      <printArgument>
-      *** Generating:  73:     WRITESTRING       23    26
       CHARACTER STRING LITERAL: "1 = "
+      *** Generating:  73:     WRITESTRING       23    26
       ... node has no more children
      )
      ;
@@ -429,8 +429,8 @@
      Reserved Word: print
      (
      <printArgument>
-      *** Generating:  78:     WRITESTRING       27    31
       CHARACTER STRING LITERAL: "17 = "
+      *** Generating:  78:     WRITESTRING       27    31
       ... node has no more children
      )
      ;
@@ -470,8 +470,8 @@
      Reserved Word: print
      (
      <printArgument>
-      *** Generating:  83:     WRITESTRING       32    36
       CHARACTER STRING LITERAL: "-3 = "
+      *** Generating:  83:     WRITESTRING       32    36
       ... node has no more children
      )
      ;
@@ -511,8 +511,8 @@
      Reserved Word: print
      (
      <printArgument>
-      *** Generating:  88:     WRITESTRING       37    42
       CHARACTER STRING LITERAL: "-17 = "
+      *** Generating:  88:     WRITESTRING       37    42
       ... node has no more children
      )
      ;
@@ -556,8 +556,8 @@
      Reserved Word: print
      (
      <printArgument>
-      *** Generating:  94:     WRITESTRING       43    47
       CHARACTER STRING LITERAL: "-3 = "
+      *** Generating:  94:     WRITESTRING       43    47
       ... node has no more children
      )
      ;
@@ -600,8 +600,8 @@
      Reserved Word: println
      (
      <printArgument>
-      *** Generating:  99:     WRITESTRING       48    60
       CHARACTER STRING LITERAL: "How did I do?"
+      *** Generating:  99:     WRITESTRING       48    60
       ... node has no more children
      )
      ;
@@ -722,78 +722,3 @@ Instructions Generated:
 99:     WRITESTRING       48    60
 100:    WRITELNOP
 101:    STOP
-
-
-
-Data memory dump
-
-  Data memory--addresses 0 to top of stack, and allocated heap locations:
-  0: 0 = Ctrl-@
-  1: 0 = Ctrl-@
-  2: 0 = Ctrl-@
-  3: 50 = '2'
-  4: 57 = '9'
-  5: 50 = '2'
-  6: 32 = ' '
-  7: 47 = '/'
-  8: 32 = ' '
-  9: 56 = '8'
-  10: 32 = ' '
-  11: 61 = '='
-  12: 32 = ' '
-  13: 50 = '2'
-  14: 56 = '8'
-  15: 57 = '9'
-  16: 32 = ' '
-  17: 37 = '%'
-  18: 32 = ' '
-  19: 57 = '9'
-  20: 32 = ' '
-  21: 61 = '='
-  22: 32 = ' '
-  23: 49 = '1'
-  24: 32 = ' '
-  25: 61 = '='
-  26: 32 = ' '
-  27: 49 = '1'
-  28: 55 = '7'
-  29: 32 = ' '
-  30: 61 = '='
-  31: 32 = ' '
-  32: 45 = '-'
-  33: 51 = '3'
-  34: 32 = ' '
-  35: 61 = '='
-  36: 32 = ' '
-  37: 45 = '-'
-  38: 49 = '1'
-  39: 55 = '7'
-  40: 32 = ' '
-  41: 61 = '='
-  42: 32 = ' '
-  43: 45 = '-'
-  44: 51 = '3'
-  45: 32 = ' '
-  46: 61 = '='
-  47: 32 = ' '
-  48: 72 = 'H'
-  49: 111 = 'o'
-  50: 119 = 'w'
-  51: 32 = ' '
-  52: 100 = 'd'
-  53: 105 = 'i'
-  54: 100 = 'd'
-  55: 32 = ' '
-  56: 73 = 'I'
-  57: 32 = ' '
-  58: 100 = 'd'
-  59: 111 = 'o'
-  60: 63 = '?'
-
-  PC=0  ESP=0  FP=<not in use>  ASP= POINTER TO 61
-  HP= POINTER TO 10000  HMAX= POINTER TO 15000
-
-  No instructions executed.
-
-  Expression evaluation stack: <empty>
-

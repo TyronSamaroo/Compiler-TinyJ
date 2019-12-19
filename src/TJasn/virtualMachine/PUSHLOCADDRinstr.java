@@ -7,6 +7,8 @@ public class PUSHLOCADDRinstr extends OneOperandInstruction {
   void execute ()
   {
      /* ???????? */
+    EXPRSTACK[ESP++] = FP + this.operand;
+
   }
 
 
